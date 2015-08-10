@@ -83,6 +83,8 @@ public class Menu extends BasicGameState {
 		for(int i = 25; i<= 800; i+=25)
 		g.drawLine(0, i, 1300,i);
 		
+		int count = 1;
+		
 		
 		g.drawImage(fibre_link, flX, flY);
 		g.drawImage(modulator, mlX, mlY);
@@ -106,6 +108,8 @@ public class Menu extends BasicGameState {
 		g.drawLine(1300, 200, 1600, 200);
 		g.drawLine(1300, 100, 1600, 100);
 		g.drawString(mouse, 90, 10);
+		
+		
 		
 		}
 
@@ -142,6 +146,7 @@ public class Menu extends BasicGameState {
 				laX += Mouse.getDX();
 				laY -= Mouse.getDY();
 			}
+		
 		
 		if(Mouse.getEventButton() != -1)
 			if((XXpos > aoX && XXpos <aoX+100) && (YYpos >aoY+700 && YYpos<aoY+800))
@@ -254,6 +259,8 @@ public class Menu extends BasicGameState {
 		int Ypos = Mouse.getY();
 		mouse = "Mouse position x: " + Xpos + " y: " +Ypos;
 	}
+	
+	
 	
 	public int getID(){
 		return 0;
